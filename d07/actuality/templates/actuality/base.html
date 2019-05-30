@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8"/>
+
+		<!-- appel du fichier jquery on line 
+		<script src=="https://code.jquery.com/jquery-latest.min.js"></script> -->
+		
+		<title>
+			
+		</title>
+	</head>
+
+	<body>
+		
+		<h1>
+			{% block title %}
+			 {% endblock %}
+		</h1>
+
+		{% include "actuality/nav.html" %}
+	
+		<div>
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>

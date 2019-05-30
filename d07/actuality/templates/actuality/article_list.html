@@ -1,0 +1,23 @@
+{% extends 'actuality/base.html' %}
+
+{% block title %}
+	Liste des article
+{% endblock %}
+Table qui affiche les articles de  modele Article
+{% block content %}
+	
+	<table style="border:1px solid black;border-collapse:collapse;border-radius:30%">
+		<tr style="font-weight:bold">
+			<th>Title</th>
+			<th>Author</th>
+			<th>created</th>
+			<th>synopsis</th>
+		</tr>
+		<tr>
+			<td>{{ title }}</td>
+			<td>{{ author }}</td>
+			<td>{{ created }}</td>
+			<td>{{ synopsis }}</td>
+		</tr>	
+	</table>        
+{% endblock %}
